@@ -41,8 +41,8 @@ const Sidenav = () => {
     },
   ];
   return (
-    <div className="sidenav">
-      <p className="text-[#093D5E] text-center mt-[2rem] font-bold text-2xl pb-[6.66rem]">
+    <div className="border-r-2 sidenav">
+      <p className="text-[#093D5E] text-center pt-[2rem] font-bold text-2xl pb-[6.66rem]">
         Logo
       </p>
       <div className="flex flex-col">
