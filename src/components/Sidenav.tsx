@@ -14,30 +14,37 @@ const Sidenav = () => {
     {
       name: "Dashboard",
       icon: GridIcon,
+      path: "/dashboard",
     },
     {
       name: "My Store",
       icon: BagIcon,
+      path: "/mystore",
     },
     {
       name: "Sales",
       icon: ChartIcon,
+      path: "/chart",
     },
     {
       name: "Expenses",
       icon: ActivityIcon,
+      path: "/expenses",
     },
     {
       name: "Store Config",
       icon: SettingIcon,
+      path: "/settings",
     },
     {
       name: "Locations",
       icon: LocationIcon,
+      path: "/locations",
     },
     {
       name: "Logout",
       icon: LogoutIcon,
+      path: "/logout",
     },
   ];
   return (
@@ -48,7 +55,7 @@ const Sidenav = () => {
       <div className="flex flex-col">
         {navItems.map((nav, navIndex) => (
           <NavLink
-            to="path"
+            to={`${nav.path}`}
             className="flex items-center pt-[2.8125rem] pl-[3.3125rem]"
           >
             <nav.icon />

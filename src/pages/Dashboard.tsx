@@ -1,18 +1,35 @@
 import React from "react";
-import Sidenav from "../components/Sidenav";
-import DashboardMain from "../components/vectors/DashboardMain";
-import "./Dashboard.css";
+import DashboardLayout from "../components/DashboardLayout";
 
 const Dashboard = () => {
   return (
-    <div className="grid w-screen h-screen grid-cols-12">
-      <div className="col-span-2">
-        <Sidenav />
+    <DashboardLayout title="Dashboard">
+      <div>
+        <div className="flex items-center justify-between">
+          <div className="border-2 w-[21.3125rem] h-[7.875rem] mt-[2rem] flex justify-evenly items-center rounded-lg">
+            <img src="/images/chart.svg" alt="" className="bg-[#f1f9fe]" />
+            <span>
+              <p>Daily sales</p>
+              <p>$24,500</p>
+            </span>
+          </div>
+          <div className="border-2 w-[21.3125rem] h-[7.875rem] mt-[2rem] flex justify-evenly items-center rounded-lg">
+            <img src="/images/chart.svg" alt="" className="bg-[#f1f9fe]" />
+            <span>
+              <p>Daily sales</p>
+              <p>$24,500</p>
+            </span>
+          </div>
+          <div className="border-2 w-[21.3125rem] h-[7.875rem] mt-[2rem] flex justify-evenly items-center rounded-lg">
+            <img src="/images/chart.svg" alt="" className="bg-[#f1f9fe]" />
+            <span>
+              <p>Daily sales</p>
+              <p>$24,500</p>
+            </span>
+          </div>
+        </div>
       </div>
-      <div className="col-span-10">
-        <DashboardMain />
-      </div>
-    </div>
+    </DashboardLayout>
   );
 };
 
