@@ -4,7 +4,9 @@ import DashboardLayout from "../components/DashboardLayout";
 const MyStore = () => {
   return (
     <DashboardLayout title="My store">
-      <div>hhhhhh</div>
+      <div>
+        <p>My Store</p>
+      </div>
     </DashboardLayout>
   );
 };
